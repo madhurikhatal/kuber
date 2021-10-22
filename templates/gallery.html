@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<meta charset="utf-10">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"      integrity="sha384-UHRtZLI         +pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"          crossorigin="anonymous">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+<table>
+<body style="background-image: url({{url_for('static',filename='img/nn.jpeg')}});">
+<tr><td>
+         <img src="{{url_for('static',filename='img/1.jpg')}}" height="300" width="450"></td>&nbsp&nbsp&nbsp
+    <td> <img src="{{url_for('static',filename='img/11.jpg')}}" height="300" width="420"></td>&nbsp&nbsp&nbsp
+     <td> <img src="{{url_for('static',filename='img/2.2.jpeg')}}" height="300" width="450"></td></tr>&nbsp&nbsp&nbsp
+
+ <tr>
+    <td><img src="{{url_for('static',filename='img/c1.jpg')}}" height="300" width="450"></td>&nbsp&nbsp&nbsp
+    <td><img src="{{url_for('static',filename='img/c2.jpg')}}" height="300" width="420"></td>&nbsp&nbsp&nbsp
+    <td><img src="{{url_for('static',filename='img/c3.jpg')}}" height="300" width="450"></td>&nbsp&nbsp&nbsp
+</tr>   
+<tr><td><img src="{{url_for('static',filename='img/c4.jpg')}}" height="300" width="450"></td>&nbsp&nbsp&nbsp
+    <td><img src="{{url_for('static',filename='img/c5.jpg')}}" height="300" width="420"></td>&nbsp&nbsp&nbsp
+    <td><img src="{{url_for('static',filename='img/c6.jpg')}}" height="300" width="450"></td>
+</tr>
+</body>
+</table>
+{% endblock body %}

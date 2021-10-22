@@ -1,0 +1,88 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<meta charset="utf-10">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"      integrity="sha384-UHRtZLI         +pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"          crossorigin="anonymous">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+
+
+<body>
+<div class="container">
+  <center><h2><b><u>Registration</u></b></h2></center>
+
+ 	
+    <div class="form-group">
+      <label for="uname"><b>Customer name:</label>
+      <input type="text" class="form-control" id="uname" placeholder="Enter customer name" name="uname" pattern="[A-Za-z]" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div> <div class="form-group">
+      <label for="uname">Address:</label>
+      <input type="text" class="form-control" id="uname1" placeholder="Enter address" name="uname1" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div><div class="form-group">
+  <label for="uname">Email-Address:</label>
+	<input type="email" tabindex="30" class="form-control" id="uname2" placeholder="Enter email address" name="uname22" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+</div>
+<div class="form-group">
+  <label for="uname">Event:</label>
+<select name="dropdown" class="form-control" id="uname5" placeholder="Enter email address" name="uname5" required><option value="Engagement">Engagement</option>
+	<option value=" Haldi  + Marrige">Haldi  +Marrige</option>
+	<option value="Engagement  + Haldi  +  Marrige">Engagement +Haldi+  Marrige</option>
+</select><div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+</div>
+<div class="form-group">
+  <label for="uname">Event date:</label>
+<input type="date" class="form-control" id="uname3" placeholder="Enter email address" name="uname3" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+</div><div class="form-group">
+  <label for="uname">Event days:</label>
+<select name="dropdown"  class="form-control" id="uname4" placeholder="Enter email address" name="uname4" required>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+</select><div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+</div>
+ <div class="form-group">
+      <label for="uname">Mobile no:</label>
+      <input type="number" class="form-control"  id="uname6" placeholder="Enter mobile no" name="uname6" required maxlength="10">
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember" required> Are you agree .
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+      </label>
+    </div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="m.html">
+<input type="submit"   class="btn btn-primary" value="Confirm" id="id1" ></a> 
+</form>
+
+{% endblock body %}

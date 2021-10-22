@@ -1,0 +1,154 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  </head>
+<style>
+body{
+	background-color:gray;
+   background-image:url('nn.jpeg');
+}
+#id1:hover,#id1:active{font-size: 150%;}
+input:hover,input:active{font-size: 150%;}
+select:hover,select:active{font-size: 150%;}
+.row {
+  display: -ms-flexbox; 
+  
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+</style>
+<body>
+<div class="container">-->
+{% extends 'layout.html' %}
+{% block body %}
+
+
+<meta charset="utf-10">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"      integrity="sha384-UHRtZLI         +pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"          crossorigin="anonymous">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+  
+<body style="background-image: url({{url_for('static',filename='img/r.jpg')}})">
+  <center><h2 style="font-size: 30px"><b><u>Registration</u></b></h2></center>
+ 	<form action="reg" method="post">
+    <div class="form-group">
+      <label style="font-size: 20px" for="uname"><b>Customer name:</label>
+      <input style="height: 50;font-size: 20px" type="text" class="form-control" id="uname" placeholder="Enter customer name" name="name" >
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div> <div class="form-group">
+      <label style="font-size: 20px" for="uname">Address:</label>
+      <input style="height: 50;font-size: 20px"" type="text" class="form-control" id="uname1" placeholder="Enter address" name="address" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div><div class="form-group">
+  <label style="font-size: 20px" for="uname">Email-Address:</label>
+	<input style="height: 50;font-size: 20px"" type="email" tabindex="30" class="form-control" id="uname2" placeholder="Enter email address" name="email" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+</div>
+<div class="form-group">
+ <label style="font-size: 20px" for="uname"  >Event:</label>
+  <select input style="height: 50;font-size: 20px" type="text" class="form-control" id="uname" placeholder="Enter your event"name="event" >
+ 	 <option value="Birthday Party">Birthday</option>
+    <option value=" Haldi  + Marrige">Haldi + Marrige</option>
+	<option value="Engagement  + Haldi  +  Marrige">Engagement + Haldi + Marrige</option>
+  <option value="Engagement">Engagement</option>
+ 
+  <option value="Party">Party</option>
+</select>
+<div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+</div>
+</div>
+<div class="form-group">
+  <label style="font-size: 20px" for="uname">Event date:</label>
+<input  style="height: 50;font-size: 20px"" type="date" class="form-control" id="uname3" placeholder="Enter email address" name="eventdate" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+</div><div class="form-group">
+  <label style="font-size: 20px" for="uname" >Event days:</label>
+   <input style="height: 50;font-size: 20px" type="text" class="form-control" id="uname" placeholder="Enter days of event"name="eventday" >
+  
+ <div class="form-group">
+      <label style="font-size: 20px" for="uname">Mobile no:</label>
+      <input style="height: 50;font-size: 20px"" type="number" class="form-control"  id="uname6" placeholder="Enter mobile no" name="no" required maxlength="10">
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+ 
+  <center>
+  <h1 style="font-size: 30px;color: black"><b>Payment</b></h1></center>
+            <label style="font-size:20px" for="fname">Accepted Cards</label>
+            <div class="icon-container"class="form-control" >
+              <i class="fa fa-cc-visa" style="color:navy;" id="id2"></i>
+              <i class="fa fa-cc-amex" style="color:black;" id="id2"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;" id="id2"></i>
+              <i class="fa fa-cc-discover" style="color:yellow;" id="id2"></i>
+            </div>
+            <label style="font-size: 20px" for="cname">Name on Card</label>
+            <input style="font-size: 20px" type="text" class="form-control" id="cname" name="cardname" placeholder="enter name">
+          
+            <label style="font-size: 20px" for="ccnum">Credit card number</label>
+            <input  style="font-size: 20px" type="number" class="form-control"  id="uname" placeholder="Enter card number" name="cardnumber" maxlength="10" required>
+          
+            <label style="font-size: 20px" for="expmonth">Exp month</label>
+            
+            <select input style="font-size: 20px" type="text" class="form-control" id="expmonth" name="expmonth" placeholder="Enter card expired month">
+              <option value="january">January</option>
+              <option value="february">February</option>
+              <option value="march">March</option>
+              <option value="april">April</option>
+              <option value="may">May</option>
+              <option value="june">June</option>
+              <option value="july">July</option>
+              <option value="august">August</option>
+              <option value="september">September</option>
+              <option value="october">October</option>
+              <option value="november">November</option>
+              <option value="december">December</option>
+            </select>
+            <label style="font-size: 20px" for="expyear">Exp Year</label>
+            <input style="font-size: 20px" type="text" class="form-control" id="expyear" name="expyear" placeholder="Enter card expired Year">
+                         
+            <label style="font-size: 20px" for="cvv">CVV</label>
+            <input style="font-size: 20px" style="height: 50" type="text" class="form-control" id="cvv" name="cvv" placeholder="Enter card valid value">
+            
+            <label style="font-size: 20px" for="zip">ZIP Code</label>
+            <input style="font-size: 20px" style="height: 50" type="text" class="form-control" id="zip" name="zip" placeholder="Enter zip code">
+           
+            <div class="form-group form-check">
+            <label style="font-size: 20px" class="form-check-label">
+            <input  style="height: 30" class="form-check-input" type="checkbox" name="remember" required> 
+        &nbsp&nbsp&nbsp&nbsp
+        Are you agree .
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+      </label>
+    </div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="/m">
+<input style="height: 40;width: 80; font-size: 20px" type="submit"   class="btn btn-primary" value="submit" id="id1" ></a> 
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="/">
+<input style="background-color: red; font-size: 20px" type="button" class="btn btn-primary ml-5" value="Cancel" id="id2" style=""></a>
+
+</div> 
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
+{% endblock body %}

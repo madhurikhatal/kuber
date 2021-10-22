@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<meta charset="utf-10">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"      integrity="sha384-UHRtZLI         +pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"          crossorigin="anonymous">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+
+<body style="background-image: url({{url_for('static',filename='img/nn.jpeg')}})">
+  <center>
+
+  <h1 style="font-size: 30px">Payment</h1></center>
+            <label style="font-size:15px" for="fname">Accepted Cards</label>
+            <div class="icon-container"class="form-control" >
+              <i class="fa fa-cc-visa" style="color:navy;" id="id2"></i>
+              <i class="fa fa-cc-amex" style="color:black;" id="id2"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;" id="id2"></i>
+              <i class="fa fa-cc-discover" style="color:yellow;" id="id2"></i>
+            </div>
+            <label style="font-size: 15px" for="cname">Name on Card</label>
+            <input style="font-size: 20px" type="text" class="form-control" id="cname" name="cardname" placeholder="enter name">
+            <label style="font-size: 15px" for="ccnum">Credit card number</label>
+              
+            <input  style="font-size: 20px" type="number" class="form-control"  id="uname" placeholder="Enter card number" name="uname" maxlength="10" required>
+           
+            <label style="font-size: 15px" for="expmonth">Exp Month</label>
+            <input style="font-size: 20px" type="text" class="form-control" id="expmonth" name="expmonth" placeholder="Enter month">
+            <div class="row">
+              <div class="col-50">
+                <label style="font-size: 15px" for="expyear">Exp Year</label>
+                <input style="font-size: 20px" type="text" class="form-control" id="expyear" name="expyear" placeholder="Enter Year">
+              </div>
+
+
+
+              <div class="col-50">
+                <label style="font-size: 15px" for="cvv">CVV</label>
+                <input style="font-size: 20px" style="height: 50" type="text" class="form-control" id="cvv" name="cvv" placeholder="Enter card valid value">
+              </div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+              <br><br><br><br>
+<a href="/submit">
+<input style="font-size: 20px" type="submit"   class="btn btn-primary ml-5" value="Submit" id="id2" ></a> 
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="/index">
+<input style="background-color: red; font-size: 20px" type="submit"   class="btn btn-primary ml-5" value="Cancel" id="id2" style="" ></a> 
+            </div>
+             </div>
+       </form>
+    </div>
+  </div>
+</div>
+</body>
+<br><br><br><br><br><br><br><br><br><br><br>
+{% endblock body %}
+
+
+

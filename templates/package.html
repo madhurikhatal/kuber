@@ -1,0 +1,104 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<meta charset="utf-10">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"      integrity="sha384-UHRtZLI         +pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"          crossorigin="anonymous">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    <style>
+      .dropdown{
+position:relative;
+display:inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+   min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size:25px;
+color:black;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    </style>
+<body style="background-image: url({{url_for('static',filename='img/nn.jpeg')}})">
+<center><h2 style="font-size: 40px"><b>PAKAGES</b></h2></center>
+<table>
+  <tr><td>
+<div class="row">
+  <div class="dropdown">
+    <div class="column"><img src="{{url_for('static',filename='img/s1.jfif')}}" height="300" width="400">
+    <div class="dropdown-content">
+     <center> <h2><b>Avilable Facility</b></h2>
+              <h5><b>Panditji</b></h5>
+      <h5><b>Decoration</b></h5>
+      <h2><b>ALL Package are:</h2>
+       <h5>Hall=50000<br>
+      Food(for 700 plates)=100000</h5></b>
+    </center>
+    </div>
+    </div>
+    </div>
+  </td>
+  <td>
+    <div class="dropdown">
+          <div class="column"><img src="{{url_for('static',filename='img/g1.jpg')}}" height="300"      width="400">
+            <div class="dropdown-content">
+                     <center> <h2><b>Avilable Facility</b></h2>
+                                      <h5><b>Panditji</b></h5>
+                                      <h5><b>Decoration</b></h5>
+                                      <h5><b>Music system</b></h5>
+                                      <h5><b>Horse</b></h5>
+                                      <h2><b>ALL Package are:</b></h2>
+                                            <h5>Hall=80000<br>
+                                              Food(for 700 plates)=150000</h5>
+                      </center>
+                  </div>
+                  </div>    
+            </div>
+</td>
+<td> 
+  <div class="dropdown">
+ <div class="column"><img src="{{url_for('static',filename='img/d11.jpg')}}" height="300" width="400">  
+  <div class="dropdown-content">
+    <center>  <h2><b>Avilable Facility</b></h2>
+                         <h5><b>Panditji</b></h5>
+                          <h5><b>Decoration</b></h5>
+                          <h5><b>Music system</b></h5>
+                          <h5><b>Horse</b></h5>
+                          <h5><b>Grand Entry</b></h5>
+                          <h5><b>Anchor</b></h5>
+                          <h5><b>Photographer</b></h5>
+                          <h5><b>Girls and Boys for wellcome to guest</b></h5>
+                          <h2><b>ALL Package are:</h2>
+                           <h5> Hall=100000<br>
+                          Food with Desert(for 700 plates)=200000</b></h5></center>
+      </div>
+      </div>
+
+   </div>           
+</td>
+</div>
+</tr>
+</table>
+<div class="slvr">Silver Card</div>
+<div class="gldc">Golden Card</div>
+<div class="diac">Diamond Card</div>
+<div id="tagret1"></div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><Br><br>
+<BR><br><br><br><br><br><br>
+
+
+{% endblock body %}
